@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.udg.envio_de_fotos">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera2"
+        android:required="false"
+        />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:theme">
+        <activity
+            android:name=".Vistas.PreferenciasActivity"
+            android:label="Preferencias"
+            android:parentActivityName=".Vistas.MainActivity" />
+        <activity
+            android:name=".Vistas.ClaveActivity"
+            android:parentActivityName=".Vistas.MainActivity" />
+        <activity
+            android:name=".Vistas.PreEnviarActivity"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".Vistas.ClaveActivity" />
+        <activity
+            android:name=".Vistas.MainActivity"
+            android:label="@string/tituloIcono"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/SplashTheme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="@string/authorities"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+
+        <activity android:name=".Vistas.NumOrdenes"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/numero_de_ordenes"/>
+        <activity android:name=".Vistas.CameraActivity"/>
+        <activity android:name=".Camara.RuntimePermissionActivity"
+            android:theme="@style/squarecamera__CameraFullScreenTheme.NoUI"
+            />
+
+    </application>
+
+</manifest>

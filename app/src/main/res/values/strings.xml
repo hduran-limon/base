@@ -1,0 +1,53 @@
+<resources>
+
+    <string name="preferencias">Preferencias</string>
+    <string name="nombreXX">Ingresoo de la Unidad</string>
+    <string name="enviar">Enviar</string>
+    <string name="editar">Editar clave</string>
+    <string name="reenviar">Reenviar</string>
+    <string name="correoDSummary">Cuenta de correo al que se enviarán las fotos</string>
+    <string name="correoD">Coreo destino</string>
+    <string name="correoG">Correo gmail</string>
+    <string name="correoGSummary">Cuenta de correo  Origen(gmail)</string>
+    <string name="pass">Contraseña </string>
+    <string name="passSummary">Contraseña de la cuenta </string>
+    <string name="capturar">Tomar una foto</string>
+    <string name="picture">Capturar</string>
+    <string name="description_info">Info</string>
+    <string name="app_name">Photos</string>
+    <string name="aceptar">Continuar</string>
+    <string name="liga">Fotogaleria</string>
+    <string name="permitidos">abcdefghijklmnñopqrstuvwxyz-" "ABCDEFGHIJKLMNÑOPQRSTUVWXYZáéíóúÁÉÍÓÚ</string>
+    <string name="permitidos2">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</string>
+
+
+
+    <string name="actualizar">Actualizar</string>
+    <string name="acercade">Acerca de...</string>
+    <string name="send">Correo Enviado</string>
+    <string name="sinPreferencias">No ha configurado sus preferencias</string>
+    <string name="enviando">Enviando...</string>
+    <string name="buscar">Buscar</string>
+    <string name="alta">Alta</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Mobi Prosoft</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="error_envio">Could not connect to SMTP host: localhost, port: 25</string>
+
+
+    <string name="squarecamera__action_settings">Settings</string>
+    <string name="squarecamera__start_image_capture">Take New Picture!</string>
+    <string name="squarecamera__capture_image">Snap It!</string>
+    <string name="squarecamera__save_image">Save</string>
+    <string name="squarecamera__cancel">Cancel</string>
+    <string name="squarecamera__swap_camera">Swap</string>
+    <string name="squarecamera__flash">Flash</string>
+    <string name="squarecamera__auto_flash">Auto Flash</string>
+    <string name="squarecamera__no_flash">No Flash</string>
+    <string name="squarecamera__recapture_image">Retake Picture</string>
+    <string name="squarecamera__capturing_image">Taking New Picture</string>
+    <string name="squarecamera__done">Done</string>
+    <string name="squarecamera__request_write_storage_permission_text">Approval is needed to save your photo on your device</string>
+</resources>
